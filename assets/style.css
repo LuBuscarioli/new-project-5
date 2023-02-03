@@ -14,7 +14,7 @@ body {
 
 :root {
     --branco-principal: #FFF7E9;
-    --laranja: tomato;
+    --laranja: #ff4827;
     --azul-escuro: #1746a3;
     --azul-claro: #5F9DF7;
     --azul-mais-claro: #a1c7ff;
@@ -83,18 +83,32 @@ body {
 }
 
 .news__title {
-    font-weight: 700;
-    font-size: 30px;
     grid-area: text1;
+}
+
+.news__title h1 {
+    font-size: 70px;
+    font-weight: 700;
 }
 
 .news__txt {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 16px;
-    font-weight: 400;
     grid-area: text2;
+}
+
+.news__txt p {
+    font-weight: 500;
+}
+
+.news__txt a {
+    text-decoration: none;
+    color: var(--laranja);
+    padding: 1em;
+    background: var(--cinza);
+    width: fit-content;
+    font-weight: 700;
 }
 
 
