@@ -6,11 +6,32 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    background: var(--branco-principal);
+    font-size: 20px;
 }
 
 :root {
-    --Off-white: hsl(36, 100%, 99%);
-    --Grayish-blue: hsl(233, 8%, 79%);
-    --Dark-grayish-blue: hsl(236, 13%, 42%);
-    --Very-dark-blue: hsl(240, 100%, 5%);
+    --branco-principal: #FFF7E9;
+    --laranja: #FF731D;
+    --azul-escuro: #1746a3;
+    --azul-claro: #5F9DF7;
+}
+
+.navbar {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: var(--laranja);
+}
+
+.nav__lista a{
+    text-decoration: none;
+}
+
+.nav__buttons a{
+    text-decoration: none;
+    padding: .5em;
+    background: var(--branco-principal);
+    border-radius: 8px;
 }
