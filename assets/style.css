@@ -26,7 +26,7 @@ body {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background: var(--cinza);
+    background: var(--laranja);
     box-shadow: 2px 2px 12px var(--azul-escuro);
 }
 
