@@ -7,7 +7,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background: var(--branco-principal);
-    font-size: 20px;
+    font-size: 18px;
     background: linear-gradient(to right, var(--branco-principal) 0%,
     var(--azul-mais-claro) 100%);
 }
@@ -54,20 +54,33 @@ body {
 }
 
 .news {
+    display: flex;
     position: absolute;
-    display: flex;
-    width: 100%;
-    top: 85px;
+    width: 100vw;
+    top: 120px;
+    justify-content: center;
 }
 
-.news__pack {
-    display: flex;
-    flex-wrap: wrap;
+.news__pack-grid {
+    display:grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 30px;
 }
 
-.news__pack-txt {
-    display: grid;
+.news__pack img {
+    width: 1000px;
+    margin-bottom: 30px;
 }
+
+.news__pack h1 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.news__pack p {
+    font-size: 16px;
+}
+
 
 .news__card-wrapper {
     height: 600px;
