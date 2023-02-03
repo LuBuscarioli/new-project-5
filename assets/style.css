@@ -9,7 +9,7 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: var(--branco-principal);
     font-size: 18px;
-
+    background-image: linear-gradient(to right, var(--branco-principal) 30%, var(--azul-claro) 100%);
 }
 
 :root {
@@ -58,7 +58,8 @@ body {
 
 .news {
     width: 100vw;
-    height: 90vh;
+    height: 95vh;
+    min-height: 950px;
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: 400px 250px;
@@ -116,9 +117,30 @@ body {
     grid-area: box;
 }
 
+.line {
+    width: 90%;
+    height: 1px;
+    background: var(--azul-claro);
+    margin: 1em auto;
+}
+
 .swiper {
-    width: 600px;
-    height: 300px;
-    position: relative;
-    bottom: 50px;
+    width: 1000px;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
