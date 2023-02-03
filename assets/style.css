@@ -8,6 +8,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     background: var(--branco-principal);
     font-size: 20px;
+    background: linear-gradient(to right, var(--branco-principal) 0%,
+    var(--azul-mais-claro) 100%);
 }
 
 :root {
@@ -15,6 +17,7 @@ body {
     --laranja: #FF731D;
     --azul-escuro: #1746a3;
     --azul-claro: #5F9DF7;
+    --azul-mais-claro: #a1c7ff;
 }
 
 .navbar {
@@ -27,6 +30,11 @@ body {
 
 .nav__lista a{
     text-decoration: none;
+    margin-left: 1em;
+    color: var(--branco-principal);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--branco-principal);
 }
 
 .nav__buttons a{
@@ -34,4 +42,7 @@ body {
     padding: .5em;
     background: var(--branco-principal);
     border-radius: 8px;
+    color: var(--azul-escuro);
+    font-weight: 700;
+    letter-spacing: 2px;
 }
