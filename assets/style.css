@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: var(--branco-principal);
     font-size: 18px;
-    background-image: linear-gradient(to right, var(--branco-principal) 30%, var(--azul-claro) 100%);
+    background-image: var(--fundo-gradiente);
 }
 
 :root {
     --branco-principal: #FFF7E9;
+    --fundo-gradiente: linear-gradient(to right, var(--branco-principal) 70%, var(--azul-claro) 100%);
     --laranja: #FF8000;
     --azul-escuro: #0a162e;
     --azul-claro: #47C7FC;
@@ -62,11 +62,16 @@ body {
     background-size: contain;
     padding: 20px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all .4s ease;
 }
 
 .dark-mode {
     --label-icon: url(images/sun-icon.svg); 
+    --fundo-gradiente: linear-gradient(to right, var(--cinza) 70%, var(--azul-escuro) 100%);
+}
+
+#btn {
+    display: none;
 }
 
 .news-wrap {
