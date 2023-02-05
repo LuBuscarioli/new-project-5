@@ -22,3 +22,9 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  //dark mode 
+
+  document.querySelector('#btn').addEventListener('click', () => {
+      document.body.classList.toggle("dark-mode");
+  })

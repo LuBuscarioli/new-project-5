@@ -19,6 +19,7 @@ body {
     --azul-claro: #47C7FC;
     --azul-mais-claro: #c8defe;
     --cinza: #2b2b2b;
+    --label-icon: url(images/moon-icon.svg);
 }
 
 .navbar {
@@ -52,12 +53,26 @@ body {
     letter-spacing: 2px;
 }
 
+.toggle-mode {
+    background-image: var(--label-icon);
+    position: absolute;
+    top: 100px;
+    right: 2%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    --label-icon: url(images/sun-icon.svg); 
+}
+
 .news-wrap {
     width: 100%;
 }
 
 .news {
-    width: 100vw;
     height: 95vh;
     min-height: 950px;
     display: grid;
