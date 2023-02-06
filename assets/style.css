@@ -29,6 +29,36 @@ body {
     /*background-image: var(--fundo-gradiente);*/
 }
 
+.cookies__wrapper {
+    width: 600px;
+    height: 200px;
+    background: var(--laranja-claro);
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.2em;
+    position: absolute;
+}
+
+.cookies__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.cookies__title img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.cookies__buttons {
+    text-align: center;
+}
+
 .dark-mode {
     --label-icon: url(images/sun-icon.svg); 
     /*--fundo-gradiente:  linear-gradient(to right, var(--preto) 50%, var(--cinza) 100%);*/
