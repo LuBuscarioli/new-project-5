@@ -58,7 +58,7 @@ body {
 }
 
 .cookies__title img {
-    width: 50px;
+    width: 40px;
     margin-right: 5px;
 }
 
@@ -73,9 +73,20 @@ body {
 }
 
 .cookies__buttons button {
-    font-size: 20px;
-    padding: 3px 10px;
+    font-size: 18px;
+    padding: 5px 25px;
     margin: 15px 15px;
+    background: var(--laranja);
+    border: none;
+    border-radius: 4px;
+    color: var(--branco-principal);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.cookies__buttons button:hover {
+    background-color: var(--branco-principal);
+    color: var(--cinza);
 }
 
 .dark-mode {
