@@ -34,7 +34,18 @@ const swiper = new Swiper('.swiper', {
     buttons = document.querySelectorAll ('.cookie__button')
 
   function execCode () {
+    if (document.cookie.includes('technews')) return; //faz a function parar se tiver incluso o cookie
     cookieWrap.classList.add('show');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        cookieWrap.classList.remove('show');
+        if(button.id == "acceptBtn") {
+          //cookies para 1 dia. 
+          document.cookie = "cookieBy= technews; max-age=" + 60 * 60 * 24 * 1;
+        }
+      })
+    })
   }
   
   window.addEventListener('load', execCode);

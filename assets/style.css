@@ -46,8 +46,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     top: -250px;
-    transition: top 1.5s ease;
     z-index: 3;
+    transition: top .6s ease-in;
 }
 
 .cookies__wrapper.show{
@@ -71,6 +71,15 @@ body {
     text-align: center;
     margin: 10px 1em;
     font-weight: 500;
+}
+
+.cookies__txt a {
+    text-decoration: none;
+    color: var(--laranja);
+}
+
+.cookies__txt a:hover {
+    color: var(--branco-principal);
 }
 
 .cookies__buttons {
