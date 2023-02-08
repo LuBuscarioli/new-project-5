@@ -146,12 +146,31 @@ body {
     color: var(--azul-escuro);
     font-weight: 600;
     letter-spacing: 2px;
+    position: relative; /* BUSCAR ENTENDER*/
+    padding: 0 2px;
 }
+
+.nav__lista a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--laranja);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all 0.2s ease;
+}
+
+.nav__lista a:hover::after { /* a orderm :hover e depois ::after IMPORTA*/
+    width: 100%;
+}
+
 
 .nav__buttons a{
     text-decoration: none;
     padding: .5em;
-    background: var(--laranja);
+    background: var(--branco-principal);
+    border: 1px solid var(--laranja);
     border-radius: 8px;
     color: var(--azul-escuro);
     font-weight: 700;
