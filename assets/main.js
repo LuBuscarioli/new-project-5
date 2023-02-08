@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
   
     // Navigation arrows
     navigation: {
@@ -16,11 +16,8 @@ const swiper = new Swiper('.swiper', {
 
   //dark mode 
 
-  let newsBoxP = document.querySelector('.news__card-wrapper')
-
   document.querySelector('#btn').addEventListener('click', () => {
       document.body.classList.toggle("dark-mode");
-      newsBoxP.classList.toggle("dark-mode");
   })
 
   //cookies popup 

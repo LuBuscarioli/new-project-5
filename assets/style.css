@@ -252,11 +252,6 @@ body {
     padding: 1em;
 }
 
-.news__card-wrapper.dark-mode {
-    color: var(--cinza-txt);
-    transition: 3s;
-}
-
 .news__card-wrapper a {
     text-decoration: none;
     color: var(--laranja-claro);
