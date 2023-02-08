@@ -15,6 +15,7 @@
     --azul-claro: #47C7FC;
     --azul-mais-claro: #c8defe;
     --cinza: #1e1e1e;
+    --cinza-backgroundDM: #1e1e1e;
     --cinza-txt: #282828;
     --preto: #000000;
     --label-icon: url(images/moon-icon.svg);
@@ -107,6 +108,7 @@ body {
     --label-icon: url(images/sun-icon.svg); 
     /*--fundo-gradiente:  linear-gradient(to right, var(--preto) 50%, var(--cinza) 100%);*/
     --cinza-txt: #cccccc;
+    --cinza-backgroundDM: #111111;
     --fundo: #1e1e1e;
 }
 
@@ -233,14 +235,14 @@ body {
     text-decoration: none;
     color: var(--laranja);
     padding: .8em;
-    background: var(--cinza);
+    background: var(--cinza-backgroundDM);
     width: fit-content;
     font-weight: 700;
 }
 
 
 .news__card-wrapper {
-    background: var(--cinza);
+    background: var(--cinza-backgroundDM);
     grid-area: box;
     color: var(--branco-principal);
     padding: 1em;
