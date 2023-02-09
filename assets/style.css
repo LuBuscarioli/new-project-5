@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    top: -250px;
+    top: -300px;
     z-index: 3;
     transition: top .6s ease-in;
 }
@@ -197,7 +197,7 @@ body {
     grid-template-areas:
         "img img box"
         "text1 text2 box";
-    grid-row-gap: 30px;
+    grid-row-gap: 12px;
     grid-column-gap: 40px;
     justify-content: center;
     align-content: center;
@@ -366,7 +366,7 @@ footer {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .nav__lista a {
         display: none;
     }
@@ -380,7 +380,7 @@ footer {
     .swiper {
         width: 95%;
         height: 125px;
-        margin: 10px;
+        margin: 10px auto;
     }
 
     .swiper-slide img{
@@ -428,7 +428,7 @@ footer {
     }
 
     .cookies__wrapper {
-        top: -300px;
+        top: -350px;
     }
 
     .footer__stores-logos img{
