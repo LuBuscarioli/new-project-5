@@ -190,8 +190,8 @@ body {
 }
 
 .news {
-    height: 95vh;
-    min-height: 950px;
+    height: 85vh;
+    min-height: 900px;
     display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: 400px 250px;
@@ -316,4 +316,32 @@ body {
 .swiper-news-card a:hover{
     text-decoration: none;
     color: var(--laranja);
+}
+
+footer {
+    width: 100%;
+}
+
+.footer__top {
+    height: 100px;
+    background: var(--laranja-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom {
+    height: 100px;
+    background: var(--cinza);
+}
+
+.footer__logos svg {
+    width: 50px;
+    height: 50px;
+    margin: 0 1em;
+    transition: all 100ms ease-in;
+}
+
+.footer__logos svg:hover {
+    fill: var(--branco-principal);
 }
