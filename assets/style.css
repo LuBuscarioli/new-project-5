@@ -365,9 +365,6 @@ footer {
     color: var(--branco-principal);
 }
 
-@media screen and (max-width: 320px) {
-    
-}
 
 @media screen and (max-width: 425px) {
     .nav__lista a {
@@ -381,9 +378,9 @@ footer {
     }
 
     .swiper {
-        width: 420px;
+        width: 95%;
         height: 125px;
-        margin: 10px 2px;
+        margin: 10px;
     }
 
     .swiper-slide img{
@@ -428,5 +425,30 @@ footer {
 
     .toggle-mode {
         padding: 20px;
+    }
+
+    .cookies__wrapper {
+        top: -300px;
+    }
+
+    .footer__stores-logos img{
+        height: 40px;
+    }
+
+    .footer__logos svg {
+        margin: 0 0.2em;
+    }
+
+    .footer__bottom p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .nav__buttons a {
+        font-size: 16px;
+    }
+
+    .cookies__wrapper {
+        height: fit-content;
     }
 }
