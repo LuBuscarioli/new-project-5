@@ -325,14 +325,19 @@ footer {
 .footer__top {
     height: 100px;
     background: var(--laranja-claro);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: center;
 }
 
 .footer__bottom {
     height: 100px;
     background: var(--cinza);
+}
+
+.footer__logo-technews img{
+    width: 50px;
 }
 
 .footer__logos svg {
@@ -344,4 +349,18 @@ footer {
 
 .footer__logos svg:hover {
     fill: var(--branco-principal);
+}
+
+.footer__stores-logos img {
+    height: 50px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom p {
+    color: var(--branco-principal);
 }
