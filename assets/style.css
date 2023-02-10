@@ -192,11 +192,11 @@ body {
 
 .news {
     height: 80vh;
-    width: 85%;
+    width: 80%;
     margin: 4em auto;
-    min-height: 800px;
+    min-height: 870px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "img img box"
@@ -372,7 +372,7 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .nav__lista a {
         display: none;
     }
@@ -381,6 +381,7 @@ footer {
         height: auto;
         display: flex;
         flex-direction: column;
+        width: 95%;
     }
 
     .swiper {
