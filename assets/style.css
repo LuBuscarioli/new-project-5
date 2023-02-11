@@ -377,6 +377,17 @@ footer {
         display: none;
     }
 
+    .nav__buttons a{
+        display: none;
+    }
+
+    .line1, .line2, .line3 {
+        width: 30px;
+        height: 2px;
+        background-color: var(--cinza);
+        margin: 8px 0;
+    }
+
     .news {
         height: auto;
         display: flex;
@@ -458,4 +469,6 @@ footer {
     .cookies__wrapper {
         height: fit-content;
     }
+
+
 }
