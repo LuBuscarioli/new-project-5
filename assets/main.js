@@ -41,3 +41,12 @@ const swiper = new Swiper('.swiper', {
   }
   
   window.addEventListener('load', execCode);
+
+  //menu mobile
+
+  let menuBtn = document.querySelector('.nav__menu-hamb');
+  let navList = document.querySelector('.nav__lista');
+
+  menuBtn.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  })
